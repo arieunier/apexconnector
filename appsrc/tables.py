@@ -4,7 +4,6 @@ import os, logging, psycopg2
 from datetime import datetime 
 import ujson
 import uuid
-from flask_bootstrap import Bootstrap
 from libs import postgres , utils , logs
 from appsrc import app, logger
 
