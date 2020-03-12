@@ -13,12 +13,18 @@ global class uglyDatasourceConnection extends DataSource.Connection
 
         }
 
-        private HttpResponse callAPI(String endpointURL)
+        private HttpResponse callAPI(String endpointURL, String username, String password)
         {
             Http httpProtocolTable = new Http();
             HttpRequest requestTable = new HttpRequest();
             requestTable.setEndpoint(endpointURL);
             requestTable.setMethod('GET');
+
+            Blob headerValue = Blob.valueOf(username + ':' + password);
+            String authorizationHeader = 'BASIC ' + EncodingUtil.base64Encode(headerValue);
+            requestTable.setHeader('Authorization', authorizationHeader);
+
+
             HttpResponse response = httpProtocolTable.send(requestTable);
             System.debug(response.getBody());
             return response;
@@ -30,7 +36,9 @@ global class uglyDatasourceConnection extends DataSource.Connection
             System.debug(connectionInfo.endpoint);
             List<DataSource.Table> tables = new List<DataSource.Table>();
             // connect to the http endpoint
-            String jsonData = callApi(connectionInfo.endpoint + TABLE_FUNCTION).getBody();
+            String jsonData = callApi(connectionInfo.endpoint + TABLE_FUNCTION,
+                    connectionInfo.username,
+                    connectionInfo.password).getBody();
             Map<String, Object> m = (Map<String, Object>) JSON.deserializeUntyped(jsonData);
             List<Object> data = (List<Object>) m.get('data');
             
@@ -42,7 +50,9 @@ global class uglyDatasourceConnection extends DataSource.Connection
                 List<DataSource.Column> columns = new List<DataSource.Column>();
 
                 // now calls the getObject function
-                String jsonDataObject = callApi(connectionInfo.endpoint + OBJECT_FUNCTION + table_name).getBody();
+                String jsonDataObject = callApi(connectionInfo.endpoint + OBJECT_FUNCTION + table_name,
+                        connectionInfo.username,
+                        connectionInfo.password).getBody();
                 Map<String, Object> obj = (Map<String, Object>) JSON.deserializeUntyped(jsonDataObject);
                 List<Object> dataObj = (List<Object>) obj.get('columns');
                 for (Object field : dataObj)

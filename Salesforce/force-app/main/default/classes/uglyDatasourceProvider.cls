@@ -11,7 +11,7 @@ global class uglyDatasourceProvider extends DataSource.Provider
         List<DataSource.AuthenticationCapability> capabilities =
                 new List<DataSource.AuthenticationCapability>();
         capabilities.add(
-                DataSource.AuthenticationCapability.ANONYMOUS);
+                DataSource.AuthenticationCapability.BASIC);
         return capabilities;
     }
 

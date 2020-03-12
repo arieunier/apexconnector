@@ -2,11 +2,20 @@
 from flask import Flask, request, redirect, url_for, render_template
 import os, logging, psycopg2 
 from datetime import datetime 
-import ujson
-import uuid
+import ujson, uuid, base64
 from libs import postgres , utils , logs
 from appsrc import app, logger
 
+
+def checkAuthorization(request):
+    if ("Authorization" not in request.headers):
+        raise Exception("Error: unauthorized access")
+    else
+        authorizationCode = utils.headers['Authorization']
+        #base decode
+        authorizationCodeB64 = authorizationCode.split(" ")[1]
+        logger.info("Authorization Code in B64={}".format(authorizationCodeB64))
+        logger.info("Authorization Code decoded={}".format(base64.b64decode(authorizationCodeB64)))
 
 
 @app.route('/tables', methods=['GET'])
@@ -14,6 +23,7 @@ def tables():
     try :
         cookie , cookie_exists=  utils.getCookie()
         logger.debug(utils.get_debug_all(request))
+        checkAuthorization(request)
         data_dict  = postgres.__getTables()
         data = ujson.dumps(data_dict)
         return utils.returnResponse(data, 200, cookie, cookie_exists)
