@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ExternalDataSource xmlns="http://soap.sforce.com/2006/04/metadata">
     <customConfiguration>{&quot;noIdMapping&quot;:&quot;false&quot;}</customConfiguration>
-    <endpoint>https://yourdemo.herokuapp.com/</endpoint>
+    <endpoint>https://apexconnector.herokuapp.com/</endpoint>
     <isWritable>false</isWritable>
     <label>ApexConnector</label>
-    <principalType>Anonymous</principalType>
-    <protocol>NoAuthentication</protocol>
+    <principalType>PerUser</principalType>
+    <protocol>Password</protocol>
     <type>uglyDatasourceProvider</type>
+    <username>MyUserName</username>
 </ExternalDataSource>
