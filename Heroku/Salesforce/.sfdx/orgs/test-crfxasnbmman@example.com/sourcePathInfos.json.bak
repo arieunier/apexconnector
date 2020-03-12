@@ -1,0 +1,377 @@
+[
+    [
+        "/Users/arieunier/Documents/DEV_SRC/Apex_Connector/Salesforce/force-app",
+        {
+            "state": "n",
+            "sourcePath": "/Users/arieunier/Documents/DEV_SRC/Apex_Connector/Salesforce/force-app",
+            "isDirectory": true,
+            "isMetadataFile": false,
+            "size": 128,
+            "modifiedTime": 1584000515954,
+            "changeTime": 1584000515954,
+            "contentHash": "51d86f3b64a3d9a0048d192f02147b0e9e9594e4",
+            "isWorkspace": false,
+            "isArtifactRoot": true
+        }
+    ],
+    [
+        "/Users/arieunier/Documents/DEV_SRC/Apex_Connector/Salesforce/force-app/main",
+        {
+            "state": "n",
+            "sourcePath": "/Users/arieunier/Documents/DEV_SRC/Apex_Connector/Salesforce/force-app/main",
+            "isDirectory": true,
+            "isMetadataFile": false,
+            "size": 128,
+            "modifiedTime": 1584000515954,
+            "changeTime": 1584000515954,
+            "contentHash": "ae41ed56706e4439a34cda97ac997d7988935c2f",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/arieunier/Documents/DEV_SRC/Apex_Connector/Salesforce/force-app/main/default",
+        {
+            "state": "n",
+            "sourcePath": "/Users/arieunier/Documents/DEV_SRC/Apex_Connector/Salesforce/force-app/main/default",
+            "isDirectory": true,
+            "isMetadataFile": false,
+            "size": 576,
+            "modifiedTime": 1584000515965,
+            "changeTime": 1584000515965,
+            "contentHash": "8463e2d273d40710fe006d25fd27c2488d33d0dd",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/arieunier/Documents/DEV_SRC/Apex_Connector/Salesforce/force-app/main/default/applications",
+        {
+            "state": "n",
+            "sourcePath": "/Users/arieunier/Documents/DEV_SRC/Apex_Connector/Salesforce/force-app/main/default/applications",
+            "isDirectory": true,
+            "isMetadataFile": false,
+            "size": 64,
+            "modifiedTime": 1584000515964,
+            "changeTime": 1584000515964,
+            "contentHash": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/arieunier/Documents/DEV_SRC/Apex_Connector/Salesforce/force-app/main/default/aura",
+        {
+            "state": "n",
+            "sourcePath": "/Users/arieunier/Documents/DEV_SRC/Apex_Connector/Salesforce/force-app/main/default/aura",
+            "isDirectory": true,
+            "isMetadataFile": false,
+            "size": 64,
+            "modifiedTime": 1584000515964,
+            "changeTime": 1584000515965,
+            "contentHash": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/arieunier/Documents/DEV_SRC/Apex_Connector/Salesforce/force-app/main/default/classes",
+        {
+            "state": "n",
+            "sourcePath": "/Users/arieunier/Documents/DEV_SRC/Apex_Connector/Salesforce/force-app/main/default/classes",
+            "isDirectory": true,
+            "isMetadataFile": false,
+            "size": 192,
+            "modifiedTime": 1584000515961,
+            "changeTime": 1584000515961,
+            "contentHash": "ffde19213919b1d6286555cd1c8d42ac11c8fafb",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/arieunier/Documents/DEV_SRC/Apex_Connector/Salesforce/force-app/main/default/classes/uglyDatasourceConnection.cls",
+        {
+            "state": "n",
+            "sourcePath": "/Users/arieunier/Documents/DEV_SRC/Apex_Connector/Salesforce/force-app/main/default/classes/uglyDatasourceConnection.cls",
+            "isDirectory": false,
+            "isMetadataFile": false,
+            "size": 2782,
+            "modifiedTime": 1584000515962,
+            "changeTime": 1584000515962,
+            "contentHash": "455cb58a2a23043d62bd7569166758bda588d611",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/arieunier/Documents/DEV_SRC/Apex_Connector/Salesforce/force-app/main/default/classes/uglyDatasourceConnection.cls-meta.xml",
+        {
+            "state": "n",
+            "sourcePath": "/Users/arieunier/Documents/DEV_SRC/Apex_Connector/Salesforce/force-app/main/default/classes/uglyDatasourceConnection.cls-meta.xml",
+            "isDirectory": false,
+            "isMetadataFile": true,
+            "size": 174,
+            "modifiedTime": 1584000515960,
+            "changeTime": 1584000515960,
+            "contentHash": "b14927db8433719a949fb732f84be0e1c5bd19cd",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/arieunier/Documents/DEV_SRC/Apex_Connector/Salesforce/force-app/main/default/classes/uglyDatasourceProvider.cls",
+        {
+            "state": "n",
+            "sourcePath": "/Users/arieunier/Documents/DEV_SRC/Apex_Connector/Salesforce/force-app/main/default/classes/uglyDatasourceProvider.cls",
+            "isDirectory": false,
+            "isMetadataFile": false,
+            "size": 1486,
+            "modifiedTime": 1584000515961,
+            "changeTime": 1584000515961,
+            "contentHash": "9fccb04dc9d0f6c52d58c7932acc12a724b730b7",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/arieunier/Documents/DEV_SRC/Apex_Connector/Salesforce/force-app/main/default/classes/uglyDatasourceProvider.cls-meta.xml",
+        {
+            "state": "n",
+            "sourcePath": "/Users/arieunier/Documents/DEV_SRC/Apex_Connector/Salesforce/force-app/main/default/classes/uglyDatasourceProvider.cls-meta.xml",
+            "isDirectory": false,
+            "isMetadataFile": true,
+            "size": 174,
+            "modifiedTime": 1584000515961,
+            "changeTime": 1584000515961,
+            "contentHash": "b14927db8433719a949fb732f84be0e1c5bd19cd",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/arieunier/Documents/DEV_SRC/Apex_Connector/Salesforce/force-app/main/default/contentassets",
+        {
+            "state": "n",
+            "sourcePath": "/Users/arieunier/Documents/DEV_SRC/Apex_Connector/Salesforce/force-app/main/default/contentassets",
+            "isDirectory": true,
+            "isMetadataFile": false,
+            "size": 64,
+            "modifiedTime": 1584000515959,
+            "changeTime": 1584000515959,
+            "contentHash": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/arieunier/Documents/DEV_SRC/Apex_Connector/Salesforce/force-app/main/default/dataSources",
+        {
+            "state": "n",
+            "sourcePath": "/Users/arieunier/Documents/DEV_SRC/Apex_Connector/Salesforce/force-app/main/default/dataSources",
+            "isDirectory": true,
+            "isMetadataFile": false,
+            "size": 96,
+            "modifiedTime": 1584000515955,
+            "changeTime": 1584000515955,
+            "contentHash": "7eea68e614bdc174b3928818040250bd705fca81",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/arieunier/Documents/DEV_SRC/Apex_Connector/Salesforce/force-app/main/default/dataSources/ApexConnector.dataSource-meta.xml",
+        {
+            "state": "n",
+            "sourcePath": "/Users/arieunier/Documents/DEV_SRC/Apex_Connector/Salesforce/force-app/main/default/dataSources/ApexConnector.dataSource-meta.xml",
+            "isDirectory": false,
+            "isMetadataFile": true,
+            "size": 473,
+            "modifiedTime": 1584000515955,
+            "changeTime": 1584000515955,
+            "contentHash": "138a17aea16300ffd73602b659f2bf2a7f2863f5",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/arieunier/Documents/DEV_SRC/Apex_Connector/Salesforce/force-app/main/default/flexipages",
+        {
+            "state": "n",
+            "sourcePath": "/Users/arieunier/Documents/DEV_SRC/Apex_Connector/Salesforce/force-app/main/default/flexipages",
+            "isDirectory": true,
+            "isMetadataFile": false,
+            "size": 64,
+            "modifiedTime": 1584000515962,
+            "changeTime": 1584000515962,
+            "contentHash": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/arieunier/Documents/DEV_SRC/Apex_Connector/Salesforce/force-app/main/default/layouts",
+        {
+            "state": "n",
+            "sourcePath": "/Users/arieunier/Documents/DEV_SRC/Apex_Connector/Salesforce/force-app/main/default/layouts",
+            "isDirectory": true,
+            "isMetadataFile": false,
+            "size": 64,
+            "modifiedTime": 1584000515964,
+            "changeTime": 1584000515964,
+            "contentHash": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/arieunier/Documents/DEV_SRC/Apex_Connector/Salesforce/force-app/main/default/lwc",
+        {
+            "state": "n",
+            "sourcePath": "/Users/arieunier/Documents/DEV_SRC/Apex_Connector/Salesforce/force-app/main/default/lwc",
+            "isDirectory": true,
+            "isMetadataFile": false,
+            "size": 64,
+            "modifiedTime": 1584000590013,
+            "changeTime": 1584000590013,
+            "contentHash": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/arieunier/Documents/DEV_SRC/Apex_Connector/Salesforce/force-app/main/default/objects",
+        {
+            "state": "n",
+            "sourcePath": "/Users/arieunier/Documents/DEV_SRC/Apex_Connector/Salesforce/force-app/main/default/objects",
+            "isDirectory": true,
+            "isMetadataFile": false,
+            "size": 64,
+            "modifiedTime": 1584000552931,
+            "changeTime": 1584000552931,
+            "contentHash": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/arieunier/Documents/DEV_SRC/Apex_Connector/Salesforce/force-app/main/default/permissionsets",
+        {
+            "state": "n",
+            "sourcePath": "/Users/arieunier/Documents/DEV_SRC/Apex_Connector/Salesforce/force-app/main/default/permissionsets",
+            "isDirectory": true,
+            "isMetadataFile": false,
+            "size": 64,
+            "modifiedTime": 1584000515958,
+            "changeTime": 1584000515959,
+            "contentHash": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/arieunier/Documents/DEV_SRC/Apex_Connector/Salesforce/force-app/main/default/profiles",
+        {
+            "state": "n",
+            "sourcePath": "/Users/arieunier/Documents/DEV_SRC/Apex_Connector/Salesforce/force-app/main/default/profiles",
+            "isDirectory": true,
+            "isMetadataFile": false,
+            "size": 64,
+            "modifiedTime": 1584000515964,
+            "changeTime": 1584000515964,
+            "contentHash": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/arieunier/Documents/DEV_SRC/Apex_Connector/Salesforce/force-app/main/default/remoteSiteSettings",
+        {
+            "state": "n",
+            "sourcePath": "/Users/arieunier/Documents/DEV_SRC/Apex_Connector/Salesforce/force-app/main/default/remoteSiteSettings",
+            "isDirectory": true,
+            "isMetadataFile": false,
+            "size": 96,
+            "modifiedTime": 1584000515965,
+            "changeTime": 1584000515965,
+            "contentHash": "c1dfb4c471fac5ecb9f143014489e78d7b4be34e",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/arieunier/Documents/DEV_SRC/Apex_Connector/Salesforce/force-app/main/default/remoteSiteSettings/herokuapp.remoteSite-meta.xml",
+        {
+            "state": "n",
+            "sourcePath": "/Users/arieunier/Documents/DEV_SRC/Apex_Connector/Salesforce/force-app/main/default/remoteSiteSettings/herokuapp.remoteSite-meta.xml",
+            "isDirectory": false,
+            "isMetadataFile": true,
+            "size": 264,
+            "modifiedTime": 1584000515966,
+            "changeTime": 1584000515966,
+            "contentHash": "7b8ec1d8186d5408e84a87209b55e2b0700e7fdf",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/arieunier/Documents/DEV_SRC/Apex_Connector/Salesforce/force-app/main/default/staticresources",
+        {
+            "state": "n",
+            "sourcePath": "/Users/arieunier/Documents/DEV_SRC/Apex_Connector/Salesforce/force-app/main/default/staticresources",
+            "isDirectory": true,
+            "isMetadataFile": false,
+            "size": 64,
+            "modifiedTime": 1584000515962,
+            "changeTime": 1584000515963,
+            "contentHash": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/arieunier/Documents/DEV_SRC/Apex_Connector/Salesforce/force-app/main/default/tabs",
+        {
+            "state": "n",
+            "sourcePath": "/Users/arieunier/Documents/DEV_SRC/Apex_Connector/Salesforce/force-app/main/default/tabs",
+            "isDirectory": true,
+            "isMetadataFile": false,
+            "size": 64,
+            "modifiedTime": 1584000515958,
+            "changeTime": 1584000515958,
+            "contentHash": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/arieunier/Documents/DEV_SRC/Apex_Connector/Salesforce/force-app/main/default/triggers",
+        {
+            "state": "n",
+            "sourcePath": "/Users/arieunier/Documents/DEV_SRC/Apex_Connector/Salesforce/force-app/main/default/triggers",
+            "isDirectory": true,
+            "isMetadataFile": false,
+            "size": 64,
+            "modifiedTime": 1584000515962,
+            "changeTime": 1584000515962,
+            "contentHash": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/arieunier/Documents/DEV_SRC/Apex_Connector/Salesforce",
+        {
+            "state": "n",
+            "sourcePath": "/Users/arieunier/Documents/DEV_SRC/Apex_Connector/Salesforce",
+            "isDirectory": true,
+            "isMetadataFile": false,
+            "size": 288,
+            "modifiedTime": 1584000515953,
+            "changeTime": 1584000515953,
+            "contentHash": "f3e14d06baa8c49f10566b7b54406e2da2dccf7b",
+            "isWorkspace": true,
+            "isArtifactRoot": false
+        }
+    ]
+]
