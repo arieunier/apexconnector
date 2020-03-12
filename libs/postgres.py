@@ -34,9 +34,12 @@ def __execRequest(strReq, Attributes):
         return utils.__resultToDict(result)
     return {'data' : [], "columns": []}
 
-def __getObjectsDescribe(tableName):
+def __getObjectsDescribe(tableName, describe):
+    if describe == True:
+        data = __execRequest("select * from {} limit 1".format(tableName), {})
+    else:
+        data = __execRequest("select * from {} limit 100".format(tableName), {})
 
-    data = __execRequest("select * from {} limit 1".format(tableName), {})
     logger.debug("Data Returned")
     logger.debug(data)
     return data

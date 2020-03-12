@@ -33,6 +33,10 @@ def getObjects():
         # logs all attributes received
         logger.debug(utils.get_debug_all(request))
         # gets object name
+        describe = False
+        if ('describe' in request.args):
+            describe = True
+        
         object_name=''
         if ('name' in request.args):
             object_name = request.args['name']
@@ -40,7 +44,7 @@ def getObjects():
             return "Error, must specify a object name with ?name=xxx", 404
             
         data_dict = None
-        data_dict  = postgres.__getObjectsDescribe(object_name) 
+        data_dict  = postgres.__getObjectsDescribe(object_name, describe) 
         data = ujson.dumps(data_dict)#{'columns':data_dict['columns']})
         return utils.returnResponse(data, 200, cookie, cookie_exists)
 
