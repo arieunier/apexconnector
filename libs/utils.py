@@ -6,6 +6,10 @@ import os
 
 APPNAME = os.getenv("APPNAME", "test-demo-ar")
 
+def myconverter(o):
+    if isinstance(o, datetime.datetime):
+        return o.__str__()
+        
 def str2bool(v):
       return v.lower() in ("yes", "true", "t", "1")
 
