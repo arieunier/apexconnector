@@ -1,0 +1,16 @@
+Salesforce/.sfdx
+.vscode
+Salesforce/force-app/main/default/profiles/
+Salesforce/mdapi_output_dir/
+.localdevserver/
+.DS_Store
+*.tar.gz
+.ignore
+.pyc
+.vscode
+.idea
+.log
+.ini
+.DS_Store
+.env
+__pycache__

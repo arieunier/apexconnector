@@ -1,0 +1,8 @@
+{'2020-03-12 10:09:47.951','INFO',16205,postgres.py:27-<module>:-->2020-03-12 10:09:47.951944 - Initialization done Postgresql }
+{'2020-03-12 10:09:48.349','INFO',16206,postgres.py:27-<module>:-->2020-03-12 10:09:48.349611 - Initialization done Postgresql }
+{'2020-03-12 10:11:18.949','INFO',16266,postgres.py:26-<module>:-->2020-03-12 10:11:18.949590 - Initialization done Postgresql }
+{'2020-03-12 10:11:23.505','INFO',16274,postgres.py:27-<module>:-->2020-03-12 10:11:23.505939 - Initialization done Postgresql }
+{'2020-03-12 10:12:00.451','INFO',16296,postgres.py:25-<module>:-->2020-03-12 10:12:00.451735 - Initialization done Postgresql }
+{'2020-03-12 10:12:08.079','INFO',16307,postgres.py:24-<module>:-->2020-03-12 10:12:08.079806 - Initialization done Postgresql }
+{'2020-03-12 10:12:23.820','INFO',16318,postgres.py:24-<module>:-->2020-03-12 10:12:23.820158 - Initialization done Postgresql }
+{'2020-03-12 10:13:14.082','INFO',18304,postgres.py:24-<module>:-->2020-03-12 10:13:14.082364 - Initialization done Postgresql }
