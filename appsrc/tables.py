@@ -9,6 +9,7 @@ from appsrc import app, logger
 
 def checkAuthorization(request):
     if ("Authorization" not in request.headers):
+        logger.error("Authorization code is not in headers")
         return  False
     else:
         authorizationCode = request.headers['Authorization']
@@ -25,7 +26,7 @@ def tables():
         cookie , cookie_exists=  utils.getCookie()
         logger.debug(utils.get_debug_all(request))
         if (not checkAuthorization(request)):
-            utils.returnResponse("Unauthorized access", 401, cookie, cookie_exists)
+            return utils.returnResponse("Unauthorized access", 401, cookie, cookie_exists)
         data_dict  = postgres.__getTables()
         data = ujson.dumps(data_dict)
         return utils.returnResponse(data, 200, cookie, cookie_exists)
@@ -41,9 +42,10 @@ def tables():
 def getObjects():
     try: 
         cookie , cookie_exists = utils.getCookie()
-        # output type
-        # logs all attributes received
         logger.debug(utils.get_debug_all(request))
+        if (not checkAuthorization(request)):
+            return utils.returnResponse("Unauthorized access", 401, cookie, cookie_exists)
+        
         # gets object name
         describe = False
         if ('describe' in request.args):
