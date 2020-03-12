@@ -10,7 +10,7 @@ from appsrc import app, logger
 def checkAuthorization(request):
     if ("Authorization" not in request.headers):
         raise Exception("Error: unauthorized access")
-    else
+    else:
         authorizationCode = utils.headers['Authorization']
         #base decode
         authorizationCodeB64 = authorizationCode.split(" ")[1]
