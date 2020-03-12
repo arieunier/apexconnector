@@ -14,6 +14,12 @@ APPLICATION_NAME=$1
 echo "######### Creating the app"
 heroku apps:create $APPLICATION_NAME --region eu --buildpack heroku/python
 
+
+echo "######### Adding Postgres"
+heroku addons:create heroku-postgresql --app $APPLICATION_NAME
+
+echo "######### Creating Tables"
+heroku pg:psql -f createTables.sql --app  $APPLICATION_NAME
 echo "######### Adding Librato"
 heroku addons:create librato --app $APPLICATION_NAME
 

@@ -15,7 +15,7 @@ def tables():
         cookie , cookie_exists=  utils.getCookie()
         logger.debug(utils.get_debug_all(request))
         data_dict  = postgres.__getTables()
-        data = ujson.dumps(data_dict,default = utils.myconverter)
+        data = ujson.dumps(data_dict)
         return utils.returnResponse(data, 200, cookie, cookie_exists)
         
     except Exception as e:
@@ -41,7 +41,7 @@ def getObjects():
             
         data_dict = None
         data_dict  = postgres.__getObjectsDescribe(object_name) 
-        data = ujson.dumps(data_dict, default = utils.myconverter)#{'columns':data_dict['columns']})
+        data = ujson.dumps(data_dict)#{'columns':data_dict['columns']})
         return utils.returnResponse(data, 200, cookie, cookie_exists)
 
     except Exception as e:

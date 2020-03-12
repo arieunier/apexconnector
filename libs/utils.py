@@ -9,7 +9,7 @@ APPNAME = os.getenv("APPNAME", "test-demo-ar")
 def myconverter(o):
     if isinstance(o, datetime.datetime):
         return o.__str__()
-        
+
 def str2bool(v):
       return v.lower() in ("yes", "true", "t", "1")
 
@@ -38,7 +38,10 @@ def __resultToDict(result):
     for entry in result:
         resDic = {}
         for column in column_names:
-            resDic[column] = entry[column]
+            if (isinstance(entry[column], datetime.date)):
+                resDic[column] = entry[column].strftime("%Y-%m-%d, %H:%M:%S")
+            else:
+                resDic[column] = entry[column]
 
             
         arrayData.append(resDic)
