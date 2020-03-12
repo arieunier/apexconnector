@@ -1,0 +1,8 @@
+Flask
+gunicorn
+psycopg2
+SQLAlchemy
+urllib3
+psycopg2-binary
+ujson
+uuid
