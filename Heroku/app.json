@@ -1,0 +1,20 @@
+{
+  "name": "Apex Framework API",
+  "description" : "A Heroku demo to expose a REST API consumed in the APEX Connector",
+  "repository":"https://github.com/arieunier/apexconnector",
+  "keywords": ["python", "postgres", "redis", "connect"], 
+  "formation": {
+    "web": {
+      "quantity": 1,
+      "size": "standard-1x"
+    }
+  },
+  "addons": [
+    {"plan": "heroku-postgresql:hobby-dev"}
+  ],
+  "buildpacks": [
+    {
+      "url": "heroku/python"
+    }
+  ] 
+}

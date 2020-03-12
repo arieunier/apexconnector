@@ -3,7 +3,7 @@
 SAVEIFS=$IFS
 IFS=$(echo -en "\n\b")
 # set me
-if [ $# -ne 2 ]
+if [ $# -ne 1 ]
 then
     echo "Usage : deploy.sh APPLICATION_NAME "
     exit 1
@@ -15,7 +15,7 @@ echo "######### Creating the app"
 heroku apps:create $APPLICATION_NAME --region eu 
 
 echo "######### Adding Librato"
-heroku addons:create librato:free --app $APPLICATION_NAME
+heroku addons:create librato --app $APPLICATION_NAME
 
 echo "######### Adding Timber.io addon"
 heroku addons:create timber-logging --app $APPLICATION_NAME
