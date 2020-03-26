@@ -60,8 +60,8 @@ global class uglyDatasourceConnection extends DataSource.Connection
                     columns.add(DataSource.Column.text((String)field, 255));
                 }
                 // Mandatory fields
-                //columns.add(DataSource.Column.url('DisplayUrl'));
-                //columns.add(DataSource.Column.text('ExternalId',255));
+                columns.add(DataSource.Column.url('DisplayUrl'));
+                columns.add(DataSource.Column.text('ExternalId',255));
 
                 tables.add(DataSource.Table.get(table_schema + '.' + table_name, 
                 table_schema + '.' + table_name, 
@@ -145,12 +145,13 @@ global class uglyDatasourceConnection extends DataSource.Connection
 
         List<Object> fileItems = (List<Object>)responseBodyMap.get('data');
         if (fileItems != null) {
-            for (Integer i=0; i < fileItems.size(); i++) {
-                Map<String, Object> item =
-                        (Map<String, Object>)fileItems[i];
+            for (Integer i=0; i < fileItems.size(); i++) 
+            {
+                Map<String, Object> item = (Map<String, Object>)fileItems[i];
                 rows.add(createRow(item));
             }
-        } else {
+        } else 
+        {
             rows.add(createRow(responseBodyMap));
         }
         system.debug('return rows');
@@ -162,6 +163,22 @@ global class uglyDatasourceConnection extends DataSource.Connection
         Map<String, Object> row = new Map<String, Object>();
         for ( String key : item.keySet() ) 
         {
+            system.debug('###### KEY/VALUE=> [' + key + ']/[' + item.get(key) + ']');
+            if (key.equalsIgnoreCase('externalid'))
+            {
+                system.debug('###### Found external id');
+                row.put('ExternalId', item.get(key));
+            }
+            else if (key.equalsIgnoreCase('displayurl'))
+            {
+                system.debug('###### Found displayurl');                
+                row.put('DisplayUrl', item.get(key));
+            }
+            else
+            {
+				row.put(key, item.get(key));
+            }
+            /*
             if (key == 'guest_id') 
             {
                 row.put('ExternalId', item.get(key));
@@ -169,8 +186,9 @@ global class uglyDatasourceConnection extends DataSource.Connection
             {
                 row.put('DisplayUrl', item.get(key));
             }
-
+			
             row.put(key, item.get(key));
+			*/
         }
         system.debug('return row'+ row);
         return row;
