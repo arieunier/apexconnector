@@ -36,9 +36,9 @@ def __execRequest(strReq, Attributes):
 
 def __getObjectsDescribe(tableName, describe):
     if describe == True:
-        data = __execRequest("select * from {} limit 1".format(tableName), {})
+        data = __execRequest("select *, Id as ExternalId, Id as DisplayUrl from {} limit 1".format(tableName), {})
     else:
-        data = __execRequest("select * from {} limit 100".format(tableName), {})
+        data = __execRequest("select *, Id as ExternalId, Id as DisplayUrl from {} limit 100".format(tableName), {})
 
     logger.debug("Data Returned")
     logger.debug(data)

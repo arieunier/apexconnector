@@ -1,20 +1,19 @@
 drop table if exists public.badge;
-create table public.badge(id varchar(255) not null primary key, guest_id varchar(255) not null, guest_firstname varchar(255) not null, guest_lastname varchar(255) not null,
-        guest_company varchar(255), host_firstname varchar(255) not null, host_lastname varchar(255) not null, badge_status varchar(255), badge_url varchar(255), creation_date timestamp not null, picture_url varchar(255));
-drop table if exists public.packagingreviews;
-create table public.packagingreviews(
-            id varchar(255) not null primary key, 
-            ParticipantName varchar(255) not null, 
-            ParticipantEmail varchar(255) not null, 
-            BrandEvaluated varchar(255) not null,
-            GripReview varchar(255), 
-            PlugReview varchar(255) not null, 
-            PortabilityReview varchar(255) not null, 
-            Freetext varchar(255), 
-            image_url varchar(255), 
-            creation_date timestamp not null) ;
-drop table if exists public.voluntary;
-commit;
+create table public.badge(id varchar(255) not null primary key, 
+                guest_id varchar(255) not null, 
+                guest_firstname varchar(255) not null, 
+                guest_lastname varchar(255) not null,
+                guest_company varchar(255), 
+                host_firstname varchar(255) not null, 
+                host_lastname varchar(255) not null, 
+                badge_status varchar(255), 
+                badge_url varchar(255), creation_date timestamp not null, 
+                picture_url varchar(255)
+                );
+
+insert into public.badge(id, guest_id, guest_firstname, guest_lastname, guest_company, host_firstname, host_lastname, badge_status, badge_url, creation_date, picture_url)
+        values ('1','1', 'Astro', 'Astro', 'Salesforce', 'Marc', 'Benioff', 'Created', 'www.salesforce.com', NOW(), 'www.salesforce.com');
+
 drop table if exists public.shift;
 commit;
 create table public.shift(
@@ -26,21 +25,6 @@ create table public.shift(
                 ShiftTotalSeats integer,
                 ShiftCurrentConfirmed integer
 );
-create table public.voluntary(	
-                Id varchar(36) not null primary key, 	
-                Firstname varchar(255) not null,	
-                Lastname varchar(255) not null,	
-                Birthdate date not null,	
-                Email varchar(100) not null,	
-                Telephone varchar(20) not null,	 
-                ShiftId varchar(36) references public.shift(Id),	
-                RegistrationStatus varchar(30) not null, 	
-                ConfirmationCode varchar(6) not null,	
-                CookieId varchar(36) not null,	
-                creation_date timestamp not null default NOW(),	 
-                preferred_language varchar(2) not null default 'fr'
-); 
-commit;
 
 insert into public.Shift(Id, ShiftDate, ShiftNameFr, ShiftNameEn, ShiftTime, ShiftTotalSeats, ShiftCurrentConfirmed) 
         values ('1', '2019-03-26', 'Mardi 26 Mars - 10h-12h30', 'Tuesday March 26th - 10h-12h30', '10h - 12h30', 10, 0);

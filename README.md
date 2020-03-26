@@ -13,6 +13,7 @@ Steps
  
  5- open the external data source and do the same
  
+ 
 When clicking on sync, any table in Postgres will be available as an external object.
 
 Note:

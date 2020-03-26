@@ -8,4 +8,5 @@
     <protocol>Password</protocol>
     <type>uglyDatasourceProvider</type>
     <username>MyUserName</username>
+    <password>Dummy</password>
 </ExternalDataSource>

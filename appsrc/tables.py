@@ -10,7 +10,7 @@ from appsrc import app, logger
 def checkAuthorization(request):
     if ("Authorization" not in request.headers):
         logger.error("Authorization code is not in headers")
-        return  False
+        return  True
     else:
         authorizationCode = request.headers['Authorization']
         #base decode
@@ -27,6 +27,7 @@ def tables():
         logger.debug(utils.get_debug_all(request))
         if (not checkAuthorization(request)):
             return utils.returnResponse("Unauthorized access", 401, cookie, cookie_exists)
+        #Postgres part    
         data_dict  = postgres.__getTables()
         data = ujson.dumps(data_dict)
         return utils.returnResponse(data, 200, cookie, cookie_exists)
@@ -35,7 +36,7 @@ def tables():
         import traceback
         traceback.print_exc()
         cookie , cookie_exists=  utils.getCookie()
-        return utils.returnResponse("An error occured, check logs for more information", 200, cookie, cookie_exists)
+        return utils.returnResponse("The server encountered an error while processing your request", 500, cookie, cookie_exists)
 
 
 @app.route('/getObjects', methods=['GET'])
@@ -55,7 +56,7 @@ def getObjects():
         if ('name' in request.args):
             object_name = request.args['name']
         else:
-            return "Error, must specify a object name with ?name=xxx", 404
+            return utils.returnResponse("Error, must specify a object name with ?name=xxx", 403, cookie, cookie_exists)
             
         data_dict = None
         data_dict  = postgres.__getObjectsDescribe(object_name, describe) 
@@ -66,4 +67,4 @@ def getObjects():
         import traceback
         traceback.print_exc()
         cookie =  utils.getCookie()
-        return utils.returnResponse("An error occured, check logs for more information", 200, cookie, cookie_exists)
+        return utils.returnResponse("The server encountered an error while processing your request", 500, cookie, cookie_exists)
