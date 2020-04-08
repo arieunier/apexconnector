@@ -10,7 +10,7 @@ from appsrc import app, logger
 def checkAuthorization(request):
     if ("Authorization" not in request.headers):
         logger.error("Authorization code is not in headers")
-        return  True
+        return  False
     else:
         authorizationCode = request.headers['Authorization']
         #base decode
