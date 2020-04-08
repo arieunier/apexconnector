@@ -9,7 +9,7 @@ Steps
  
  3- Go into the Salesforce folder and deploy the source to your org
  
- 4- open the org and go to remote site to update the default herokuapp  url to the one you create
+ 4- open the org and go to remote site to update the default herokuapp  url to the one you created
  
  5- open the external data source and do the same
  
@@ -17,7 +17,8 @@ Steps
 When clicking on sync, any table in Postgres will be available as an external object.
 
 Note:
-only the first part (sync method) is done, query/search/.. will be done at a later stage
+Sync is done, as well as query (to display the external objects)./
+Search will be done at a later stage
 
 
 Deploy it here
